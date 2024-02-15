@@ -1,0 +1,6 @@
+A list of all miniprojects saved in this repository
+(Probably important because surely i will forget about all of these things later on):
+Python:
+-likes.py displays different messages based on how many people and who liked an imaginary post, comparable to how it is handled on certain social media sites
+-ludic.py generates ludic numbers(essentially prime numbers)
+-recnum.py solves a number for its recursive sum
