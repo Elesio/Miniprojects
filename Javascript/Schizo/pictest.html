@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ame1 {
+            position: absolute;
+            left: 50px;
+        }
+
+        .kangel1 {
+            position:absolute;
+        }
+        #change{
+            position:absolute;
+            left:500px;
+            bottom: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div><img class="ame1" src="img/AmeSprite.webp" alt="Ame is dead"><div><img class="kangel1" src="img/KAngelSprite.webp"
+        alt="Kangel is dead"></div></div>
+    <button id = "change" onclick="changepositions()">Change positions</button>
+    <script>
+        let pos = 0;
+        function changepositions(){
+        if(pos == 0){
+            document.querySelector('.kangel1').style.position = "absolute";
+            pos = 1;
+        }
+        else if(pos == 1){
+            document.querySelector('.kangel1').style.position = "relative";
+            pos = 0;
+        }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            color: black;
+        }
+        first {
+            color: green;
+        }
+        second {
+            color: red;
+        }
+        third {
+            color: blue;
+        }
+        fourth {
+            color: yellow;
+        }
+        fifth {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">huh</h1>
+    <button id="Fmbutton" type="button">Fuck me</button>
+    <button id="GAbutton" type="button" onclick="gabuttonevent()">GOAWAY</button>
+    <first>This</first> <second>text</second> <third>is</third> <fourth>so</foruth> <fifth>colorfull!</fifth>
+        <a href="pictest.html">Go to pics</a>
+    <script>
+        col = 0;
+        colors = ['green','red','blue','yellow','pink'];
+        const fmbutton = document.getElementById("Fmbutton");
+        fmbutton.addEventListener("click", function buttonevent(input) {
+            const something = prompt("Tell me something!");
+
+            console.log(something);
+        })
+        function gabuttonevent() {
+            newcolors = [];
+            for (let i = 0; i < 5; i++) {
+                if(col+i<5){
+                    newcolors.push(colors[col+i]);
+                }
+                if (col+i>=5){
+                    newcolors.push(colors[col-5+i]);
+                } }
+            document.querySelector('first').style.color = newcolors[0];
+            document.querySelector('second').style.color = newcolors[1];
+            document.querySelector('third').style.color = newcolors[2];
+            document.querySelector('fourth').style.color = newcolors[3];
+            document.querySelector('fifth').style.color = newcolors[4];
+            col++;
+            if(col==5){
+                col = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>
